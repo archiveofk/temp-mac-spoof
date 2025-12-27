@@ -13,17 +13,45 @@ A Python tool to temporarily spoof your MAC address on Linux. Automatically rest
 ### View MAC Address
 
 View MAC for a specific interface:
-python3 spoof.py --get -i wlan0View MAC for all interfaces:
-python3 spoof.py --get### List Interfaces
+```bash
+python3 spoof.py --get -i wlan0
+```
 
-python3 spoof.py --list### List Vendors
-ash
-python3 spoof.py --list-vendors### Spoof MAC Address
+View MAC for all interfaces:
+```bash
+python3 spoof.py --get
+```
+
+### List Interfaces
+
+```bash
+python3 spoof.py --list
+```
+
+### List Vendors
+
+```bash
+python3 spoof.py --list-vendors
+```
+
+### Spoof MAC Address
 
 Random MAC:
-sudo python3 spoof.py -i wlan0Specific MAC:h
-sudo python3 spoof.py -i wlan0 -m 00:11:22:33:44:55Spoof as vendor:
-sudo python3 spoof.py -i wlan0 -v appleAvailable vendors: apple, samsung, intel, microsoft, dell, hp, lenovo, cisco, huawei, sony, asus, tp-link, netgear, linksys, google, amazon, xiaomi, oneplus
+```bash
+sudo python3 spoof.py -i wlan0
+```
+
+Specific MAC:
+```bash
+sudo python3 spoof.py -i wlan0 -m 00:11:22:33:44:55
+```
+
+Spoof as vendor:
+```bash
+sudo python3 spoof.py -i wlan0 -v apple
+```
+
+Available vendors: apple, samsung, intel, microsoft, dell, hp, lenovo, cisco, huawei, sony, asus, tp-link, netgear, linksys, google, amazon, xiaomi, oneplus
 
 ## Options
 
